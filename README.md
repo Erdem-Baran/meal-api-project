@@ -1,82 +1,95 @@
-# 🍽️ TheMeal - Yemek Tarifi Keşif Uygulaması
+# 🍽️ TheMeal - Recipe Discovery App
 
-React ile geliştirilmiş modern ve responsive yemek tarifi keşif uygulaması. Binlerce tarife göz atın, favorilerinizi kaydedin ve sezgisel arama deneyimiyle farklı mutfakları keşfedin.
+A modern and responsive recipe discovery application developed with React. Browse thousands of recipes, save your favorites, and explore different cuisines with an intuitive search experience.
 
+## 🌐 Live Demo
 
-## 🌐 Canlı Demo
+**[View Application →](https://mealv1.netlify.app/)**
 
-**[Uygulamayı İncele →](https://mealv1.netlify.app/)**
+## ✨ Features
 
-## ✨ Özellikler
+- 🔍 **Real-Time Search** - Instant results and autocomplete suggestions while typing
+- ❤️ **Favorite System** - Persistently save recipes you love using localStorage
+- 🌙 **Dark/Light Mode** - Theme switching with smooth transitions
+- 📱 **Fully Responsive** - Optimized for mobile, tablet, and desktop
+- 🗂️ **Category Navigation** - Discover recipes by category (Vegetarian, Seafood, Desserts, etc.)
+- 🎨 **Fluid Animations** - Polished user interface with hover effects and transitions
+- 🌍 **International Recipes** - Explore dishes from world cuisines
 
-- 🔍 **Gerçek Zamanlı Arama** - Yazarken anında sonuç ve otomatik tamamlama önerileri
-- ❤️ **Favori Sistemi** - Sevdiğiniz tarifleri localStorage ile kalıcı olarak kaydedin
-- 🌙 **Karanlık/Aydınlık Mod** - Yumuşak geçişlerle tema değiştirme
-- 📱 **Tamamen Responsive** - Mobil, tablet ve masaüstü için optimize edilmiş
-- 🗂️ **Kategori Gezintisi** - Tarifleri kategorilere göre keşfedin (Vejetaryen, Deniz Ürünleri, Tatlılar vb.)
-- 🎨 **Akıcı Animasyonlar** - Hover efektleri ve geçişlerle cilalı kullanıcı arayüzü
-- 🌍 **Uluslararası Tarifler** - Dünya mutfaklarından yemekleri keşfedin
+## 🛠️ Technologies Used
 
-## 🛠️ Kullanılan Teknolojiler
-
-- **React 18** - Modern React ve Hooks
-- **React Router v6** - İstemci tarafı yönlendirme
-- **Context API** - Global state yönetimi
+- **React 18** - Modern React and Hooks
+- **React Router v6** - Client-side routing
+- **Context API** - Global state management
 - **Bootstrap 5** - Responsive UI framework
-- **Bootstrap Icons** - İkon kütüphanesi
-- **TheMealDB API** - Tarif veri kaynağı
-- **Vite** - Hızlı build aracı ve geliştirme sunucusu
+- **Bootstrap Icons** - Icon library
+- **TheMealDB API** - Recipe data source
+- **Vite** - Fast build tool and development server
 
-## 📦 Kurulum ve Çalıştırma
+## 📦 Installation and Setup
 
-### Gereksinimler
-- Node.js (v14 veya üzeri)
-- npm veya yarn
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-### Adımlar
+### Steps
 
-1. **Repoyu klonlayın**
+1. **Clone the repository**
 ```bash
+
 git clone https://github.com/Erdem-Baran/meal-api-project.git
+
 cd meal-api-project/meal-project-github
+
 ```
 
-2. **Bağımlılıkları yükleyin**
+2. **Load the dependencies**
+
 ```bash
+
 npm install
+
 ```
 
-3. **Geliştirme sunucusunu başlatın**
+3. **Start the development server**
+
 ```bash
+
 npm run dev
+
 ```
 
-4. **Tarayıcınızda açın**
+4. **Open in your browser**
+
 ```
+
 http://localhost:5173
+
 ```
 
-5. **Production için build alın**
+5. **Get a build for production**
+
 ```bash
-npm run build
-```
 
-## 📁 Proje Yapısı
+npm run build
+
+```
+📁 Project Structure
 ```
 meal-project-github/
 ├── src/
-│   ├── components/         # Yeniden kullanılabilir bileşenler
+│   ├── components/          # Reusable components
 │   │   ├── FavoriteButton.jsx
 │   │   ├── Footer.jsx
 │   │   ├── Header.jsx
 │   │   ├── Loading.jsx
 │   │   └── Search.jsx
-│   ├── contexts/          # React Context provider'lar
+│   ├── contexts/           # React Context providers
 │   │   ├── Favorites.jsx
 │   │   └── ThemeContext.jsx
-│   ├── layout/            # Layout bileşenleri
+│   ├── layout/            # Layout components
 │   │   └── MainLayout.jsx
-│   ├── pages/             # Sayfa bileşenleri
+│   ├── pages/             # Page components
 │   │   ├── CategoryMeals.jsx
 │   │   ├── FavoritesPage.jsx
 │   │   ├── Home.jsx
@@ -92,38 +105,41 @@ meal-project-github/
 └── vite.config.js
 ```
 
-## 🎯 Öğrenme Çıktıları
 
-Bu projeyi geliştirirken şunları öğrendim ve uyguladım:
+🎯 Learning Outcomes
+While developing this project, I learned and applied the following:
 
-- ✅ **İleri Seviye React Hooks** - useState, useEffect, useContext, useRef
-- ✅ **React Router v6** - Dinamik routing, nested routes, URL parametreleri
-- ✅ **Context API** - Redux olmadan global state yönetimi
-- ✅ **API Entegrasyonu** - Dış veri kaynağından veri çekme ve işleme
-- ✅ **localStorage** - Kullanıcı tercihlerini kalıcı hale getirme
-- ✅ **Debouncing** - Arama performansını optimize etme
-- ✅ **Responsive Tasarım** - Bootstrap ile mobile-first yaklaşım
-- ✅ **Component Composition** - Yeniden kullanılabilir UI bileşenleri oluşturma
+✅ Advanced React Hooks - useState, useEffect, useContext, useRef
 
+✅ React Router v6 - Dynamic routing, nested routes, URL parameters
 
-## 🙏 Teşekkürler
+✅ Context API - Global state management without Redux
 
-- **API:** [TheMealDB](https://www.themealdb.com/) - Ücretsiz tarif API'si
-- **İkonlar:** [Bootstrap Icons](https://icons.getbootstrap.com/)
-- **UI Framework:** [Bootstrap 5](https://getbootstrap.com/)
+✅ API Integration - Fetching and processing data from external sources
 
-## 📄 Lisans
+✅ localStorage - Persisting user preferences
 
-Bu proje MIT Lisansı altında lisanslanmıştır - öğrenme amaçlı kullanımda özgürsünüz.
+✅ Debouncing - Optimizing search performance
 
-## 👤 Geliştirici
+✅ Responsive Design - Mobile-first approach with Bootstrap
 
-**Erdem Baran**
+✅ Component Composition - Creating reusable UI components
 
-- GitHub: [@Erdem-Baran](https://github.com/Erdem-Baran)
-- LinkedIn: [Profilim](https://www.linkedin.com/in/erdem-baran/)
+🙏 Acknowledgements
+API: TheMealDB - Free recipe API
 
+Icons: Bootstrap Icons
 
----
+UI Framework: Bootstrap 5
 
-⭐ Bu projeyi faydalı bulduysanız, lütfen yıldız verin!
+📄 License
+This project is licensed under the MIT License - feel free to use it for learning purposes.
+
+👤 Developer
+Erdem Baran
+
+GitHub: [@Erdem-Baran](https://github.com/Erdem-Baran)
+
+LinkedIn: [My Profile](https://www.linkedin.com/in/erdem-baran/)
+
+⭐ If you found this project useful, please give it a star!
