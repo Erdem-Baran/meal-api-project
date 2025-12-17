@@ -32,6 +32,7 @@ export default function Meal() {
           <div
             key={meal.idMeal}
             className="col-md-3 mb-4"
+            style={{ cursor: "pointer" }}
             onClick={() => navigate(`/meal/${meal.idMeal}`)}
           >
             <div className="card shadow meal-card">
